@@ -25,7 +25,7 @@ export default function Home() {
             className="bg-white font-bold text-xl text-blue-800 rounded-3xl text-center px-4 py-2"
             dir="rtl"
           >
-            ستافد من تخفيض 100 دابا دابا !!
+            ستافد من تخفيض 100 درهم دابا دابا !!
           </p>
         </div>
 
