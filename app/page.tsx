@@ -14,20 +14,23 @@ export default function Home() {
 
       <div className="py-8 flex flex-col items-center justify-between">
         {/* TITLE */}
-        <div className="font-noto flex flex-col gap-4 items-center justify-center px-4">
-          <div className="flex gap-4 items-center justify-center text-white">
-            <p className="font-bold text-xl text-center" dir="rtl">
+        <div className="font-noto flex flex-col gap-4 items-center justify-center mx-2">
+          <div className="flex items-center justify-center gap-2 text-white w-full">
+            <p
+              className="font-bold text-xl text-center leading-relaxed"
+              dir="rtl"
+            >
               أول مرة غتكري طوموبيلتك معانا؟
             </p>
-            <PartyPopper className="h-10 w-10" />
+            <PartyPopper className="h-8 w-8" />
           </div>
-          <p
+          <div
             className="bg-white font-bold text-xl text-blue-800 rounded-3xl text-center px-4 py-2 w-full leading-relaxed"
             dir="rtl"
           >
             <p>ستافد من تخفيض 100 درهم</p>
             <p>دابا دابا !!</p>
-          </p>
+          </div>
         </div>
 
         {/* DEATILS */}
