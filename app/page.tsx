@@ -6,7 +6,10 @@ import { CarFront, Hourglass, PartyPopper } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-4 items-center justify-center">
+    <div className="flex flex-col gap-4 items-center justify-center bg-gradient-to-b from-blue-800 to-blue-500 w-full min-h-screen relative overflow-hidden">
+      <div className="rounded-full bg-white/9 absolute h-[500px] w-[500px] left-[230px] top-[-200px]"></div>
+      <div className="rounded-full bg-white/9 absolute h-[500px] w-[500px] right-[260px] top-160"></div>
+
       <div className="mt-8 px-6">
         <Navbar />
       </div>

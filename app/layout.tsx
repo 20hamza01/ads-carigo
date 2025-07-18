@@ -30,11 +30,10 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body
-        className={`${play.variable} ${noto.variable} antialiased min-h-screen bg-gradient-to-b from-blue-800 to-blue-500`}
-      >
-        <div className="rounded-full bg-white/9 absolute h-[500px] w-[500px] left-[230px] top-[-200px]"></div>
-        <div className="rounded-full bg-white/9 absolute h-[500px] w-[500px] right-[260px] top-160"></div>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
+      <body className={`${play.variable} ${noto.variable} antialiased`}>
         {children}
       </body>
     </html>
