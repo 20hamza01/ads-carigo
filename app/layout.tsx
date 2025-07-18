@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Noto_Kufi_Arabic, Play } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const play = Play({
+  variable: "--font-play",
+  weight: ["400", "700"],
+  subsets: ["cyrillic"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const noto = Noto_Kufi_Arabic({
+  subsets: ["arabic"],
+  weight: ["400", "700"],
+  display: "swap",
+  variable: "--font-noto",
 });
 
 export const metadata: Metadata = {
@@ -23,10 +26,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${play.variable} ${noto.variable} antialiased min-h-screen bg-gradient-to-b from-blue-800 to-blue-500`}
       >
+        <div className="rounded-full bg-white/9 absolute h-[500px] w-[500px] left-[230px] top-[-200px]"></div>
+        <div className="rounded-full bg-white/9 absolute h-[500px] w-[500px] right-[260px] top-160"></div>
         {children}
       </body>
     </html>
