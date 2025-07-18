@@ -4,7 +4,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex items-center justify-between gap-6 w-full mt-8 px-4">
       <div className="flex justify-start items-center gap-2">
         <Car className="text-white h-12 w-12" />
         <p className="text-3xl font-extrabold text-white">CariGO</p>

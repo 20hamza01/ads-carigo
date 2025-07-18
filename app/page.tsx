@@ -10,30 +10,33 @@ export default function Home() {
       <div className="rounded-full bg-white/9 absolute h-[500px] w-[500px] left-[230px] top-[-200px]"></div>
       <div className="rounded-full bg-white/9 absolute h-[500px] w-[500px] right-[260px] top-160"></div>
 
-      <div className="mt-8 px-6">
-        <Navbar />
-      </div>
+      <Navbar />
 
-      <div className="mt-4 py-8 flex flex-col items-center justify-between">
+      <div className="py-8 flex flex-col items-center justify-between">
         {/* TITLE */}
-        <div className="font-noto flex flex-col gap-4 items-center justify-center mb-8">
-          <div className="flex gap-4 items-center text-white">
+        <div className="font-noto flex flex-col gap-4 items-center justify-center px-4">
+          <div className="flex gap-4 items-center justify-center text-white">
+            <p className="font-bold text-xl text-center" dir="rtl">
+              أول مرة غتكري طوموبيلتك معانا؟
+            </p>
             <PartyPopper className="h-10 w-10" />
-            <p className="font-bold text-2xl">أول مرة غتكري طوموبيلتك معانا؟</p>
           </div>
-          <p className="bg-white font-bold text-2xl text-blue-800 rounded-3xl px-4 py-2">
-            !! ستافد من تخفيض 100 دابا دابا
+          <p
+            className="bg-white font-bold text-xl text-blue-800 rounded-3xl text-center px-4 py-2"
+            dir="rtl"
+          >
+            ستافد من تخفيض 100 دابا دابا !!
           </p>
         </div>
 
         {/* DEATILS */}
-        <div className="flex flex-col items-end justify-between font-noto text-white font-bold py-8 px-16 gap-8 text-xl">
+        <div className="flex flex-col items-end justify-between font-noto text-white font-bold pt-12 px-4 gap-8 text-lg">
           <div className="flex items-center gap-2">
-            <p>العرض شامل جميع السيارات</p>
+            <p dir="rtl">العرض شامل جميع السيارات.</p>
             <CarFront size={32} />
           </div>
           <div className="flex items-center gap-2">
-            <p>عرض خاص ومحدود لزبنائنا 10 الأوائل</p>
+            <p dir="rtl">عرض خاص ومحدود لزبنائنا 10 الأوائل.</p>
             <Hourglass size={32} />
           </div>
         </div>
@@ -44,7 +47,7 @@ export default function Home() {
         </div>
 
         {/* CTA */}
-        <div className="pt-16 pb-8 font-noto font-bold text-lg text-white z-10 mx-auto">
+        <div className="pt-8 pb-8 font-noto font-bold text-lg text-white z-10 mx-auto">
           <CTA />
         </div>
       </div>
