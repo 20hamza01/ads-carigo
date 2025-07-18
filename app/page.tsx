@@ -1,20 +1,17 @@
 import { Carousel } from "@/components/Carousel";
 import CTA from "@/components/CTA";
 import Navbar from "@/components/Navbar";
-import { Button } from "@/components/ui/button";
 import { cars } from "@/lib/cars";
-import { Car, CarFront, Hourglass, PartyPopper, Phone } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
+import { CarFront, Hourglass, PartyPopper } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 items-center justify-center">
       <div className="mt-8 px-6">
         <Navbar />
       </div>
 
-      <div className="flex-1 mt-4 py-8 flex flex-col items-center justify-between">
+      <div className="mt-4 py-8 flex flex-col items-center justify-between">
         {/* TITLE */}
         <div className="font-noto flex flex-col gap-4 items-center justify-center mb-8">
           <div className="flex gap-4 items-center text-white">
@@ -44,7 +41,7 @@ export default function Home() {
         </div>
 
         {/* CTA */}
-        <div className="py-8 font-noto font-bold text-lg text-white z-10 mx-auto">
+        <div className="pt-16 pb-8 font-noto font-bold text-lg text-white z-10 mx-auto">
           <CTA />
         </div>
       </div>

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const CTA = () => {
   return (
-    <div className="flex items-center justify-center flex-col gap-8">
+    <div className="flex items-center justify-center flex-col gap-4">
       <Link
         href={
           "https://wa.me/+212715192639?text=سلام%20👋%D8%8C%20بغيت%20نستافد%20من%20العرض"
