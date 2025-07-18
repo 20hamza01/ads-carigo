@@ -30,12 +30,12 @@ export default function Home() {
         </div>
 
         {/* DEATILS */}
-        <div className="flex flex-col items-end justify-between font-noto text-white font-bold pt-12 px-4 gap-8 text-lg">
-          <div className="flex items-center gap-2">
+        <div className="flex flex-col items-center font-noto text-white font-bold pt-10 px-1 gap-8 text-lg">
+          <div className="flex items-center justify-center gap-2">
             <p dir="rtl">العرض شامل جميع السيارات.</p>
             <CarFront size={32} />
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center justify-center gap-2">
             <p dir="rtl">عرض خاص ومحدود لزبنائنا 10 الأوائل.</p>
             <Hourglass size={32} />
           </div>
