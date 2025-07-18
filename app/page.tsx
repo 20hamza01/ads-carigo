@@ -22,10 +22,11 @@ export default function Home() {
             <PartyPopper className="h-10 w-10" />
           </div>
           <p
-            className="bg-white font-bold text-xl text-blue-800 rounded-3xl text-center px-4 py-2"
+            className="bg-white font-bold text-xl text-blue-800 rounded-3xl text-center px-4 py-2 w-full leading-relaxed"
             dir="rtl"
           >
-            ستافد من تخفيض 100 درهم دابا دابا !!
+            <p>ستافد من تخفيض 100 درهم</p>
+            <p>دابا دابا !!</p>
           </p>
         </div>
 
