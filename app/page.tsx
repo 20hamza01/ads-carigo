@@ -30,7 +30,7 @@ export default function Home() {
               dir="rtl"
             >
               <p>كري طوموبيل اليوم،</p>
-              <p> وغدا ديها فابور !!! </p>
+              <p> وديها فابور غدا !!! </p>
             </div>
           </div>
           <div
