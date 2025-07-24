@@ -1,8 +1,10 @@
-import { Carousel } from "@/components/Carousel";
 import CTA from "@/components/CTA";
 import Navbar from "@/components/Navbar";
-import { cars } from "@/lib/cars";
-import { CarFront, Hourglass, PartyPopper } from "lucide-react";
+import OfferTable from "@/components/OfferTable";
+import { Button } from "@/components/ui/button";
+import { PartyPopper } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -14,13 +16,13 @@ export default function Home() {
 
       <div className="py-8 flex flex-col items-center justify-between">
         {/* TITLE */}
-        <div className="font-noto flex flex-col gap-4 items-center justify-center mx-2">
+        <div className="font-noto flex flex-col gap-8 items-center justify-center mx-2 my-8 pb-4">
           <div className="flex items-center justify-center gap-2 text-white w-full">
             <p
               className="font-bold text-xl text-center leading-relaxed"
               dir="rtl"
             >
-              أول مرة غتكري طوموبيلتك معانا؟
+              تكري طوموبيل اليوم، وغدا تكريها فابور!{" "}
             </p>
             <PartyPopper className="h-8 w-8" />
           </div>
@@ -28,31 +30,41 @@ export default function Home() {
             className="bg-white font-bold text-xl text-blue-800 rounded-3xl text-center px-4 py-2 w-full leading-relaxed"
             dir="rtl"
           >
-            <p>ستافد من تخفيض 100 درهم</p>
-            <p>دابا دابا !!</p>
+            <p>كيفاش هاد البلان؟</p>
           </div>
         </div>
 
         {/* DEATILS */}
-        <div className="flex flex-col items-center font-noto text-white font-bold pt-10 px-1 gap-8 text-lg">
-          <div className="flex items-center justify-center gap-2">
-            <p dir="rtl">العرض شامل جميع السيارات.</p>
-            <CarFront size={32} />
-          </div>
-          <div className="flex items-center justify-center gap-2">
-            <p dir="rtl">عرض خاص ومحدود لزبنائنا 10 الأوائل.</p>
-            <Hourglass size={32} />
-          </div>
-        </div>
-
-        {/* CAROUSEL */}
-        <div className="z-10">
-          <Carousel cars={cars} />
+        <div className="border-4 border-white shadow-xl rounded-2xl px-4 my-4">
+          <Image
+            src="/Fidelity Points roadmap.png"
+            alt="Fidelity Points roadmap"
+            height={400}
+            width={400}
+          />
         </div>
 
         {/* CTA */}
-        <div className="pt-8 pb-8 font-noto font-bold text-lg text-white z-10 mx-auto">
+        <div className="pt-8 font-noto font-bold text-lg text-white z-10 mx-auto">
           <CTA />
+        </div>
+
+        {/* TABLE */}
+        <div className="flex flex-col items-center justify-between gap-4">
+          <div className="z-10 border-2 border-white rounded-2xl mt-12">
+            <OfferTable />
+          </div>
+          <Link href={"https://www.carigo.ma/fr"}>
+            <Button
+              asChild
+              variant={"link"}
+              className="text-white font-bold hover:underline"
+            >
+              <div className="font-noto">
+                اكتشف تفاصيل عروضنا في الموقع ديالنا
+              </div>
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

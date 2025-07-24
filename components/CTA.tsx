@@ -48,16 +48,6 @@ const CTA = () => {
           </div>
         </Button>
       </Link>
-
-      <Link href={"https://www.carigo.ma/fr"}>
-        <Button
-          asChild
-          variant={"link"}
-          className="text-white font-bold hover:underline"
-        >
-          <div className="">اكتشف عروضنا في الموقع ديالنا</div>
-        </Button>
-      </Link>
     </div>
   );
 };
