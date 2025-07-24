@@ -37,7 +37,7 @@ export default function Home() {
         {/* DEATILS */}
         <div className="border-4 border-white shadow-xl rounded-2xl px-4 my-4">
           <Image
-            src="/Fidelity Points roadmap.png"
+            src="/Fidelity_points_roadmap.png"
             alt="Fidelity Points roadmap"
             height={400}
             width={400}
