@@ -231,7 +231,7 @@ export default function OfferTable() {
           <TableHead className="border-r-2 border-white text-white font-bold">
             <div className="flex items-center justify-center gap-2">
               <Gift className="h-5 w-5" />
-              النقاط اللازمة للكراء
+              كري فابور ب:
             </div>
           </TableHead>
           <TableHead className="border-r-2 border-white text-white font-bold">
@@ -252,13 +252,13 @@ export default function OfferTable() {
         {cars.map((car, index) => (
           <TableRow key={`${car.brand}-${car.model}-${index}`}>
             <TableCell className="border-r-2 border-white" dir="rtl">
-              <div className="flex items-center gap-2 font-bold justify-center">
+              <div className="flex items-center gap-2 font-bold justify-center text-lg">
                 {car.pointsNeededForRent}
                 <p>نقطة</p>
               </div>
             </TableCell>
             <TableCell className="border-r-2 border-white" dir="rtl">
-              <div className="flex items-center gap-2 font-bold justify-center">
+              <div className="flex items-center gap-2 font-bold justify-center text-lg">
                 {car.pointsEarnedPerDay}
                 <p>نقطة</p>
               </div>
@@ -267,11 +267,11 @@ export default function OfferTable() {
               <div className="flex flex-col gap-2 items-center justify-center">
                 <Image
                   src={car.image}
-                  width={80}
-                  height={80}
+                  width={70}
+                  height={70}
                   alt="Whatsapp icon"
                 />
-                <div className="flex flex-col items-center justify-center gap-2 font-bold">
+                <div className="flex flex-col items-center justify-center gap-2 font-bold text-sm">
                   <p>{car.brand}</p>
                   <p>{car.model}</p>
                 </div>

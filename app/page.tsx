@@ -16,18 +16,25 @@ export default function Home() {
 
       <div className="py-8 flex flex-col items-center justify-between">
         {/* TITLE */}
-        <div className="font-noto flex flex-col gap-8 items-center justify-center mx-2 my-8 pb-4">
+        <div className="font-noto flex flex-col gap-8 items-center justify-center my-8 pb-4 mx-6 px-6 w-full">
           <div className="flex items-center justify-center gap-2 text-white w-full">
-            <p
+            {/* <p
               className="font-bold text-xl text-center leading-relaxed"
               dir="rtl"
             >
-              تكري طوموبيل اليوم، وغدا تكريها فابور!{" "}
-            </p>
-            <PartyPopper className="h-8 w-8" />
+              كري طوموبيل اليوم، وغدا ديها فابور!
+            </p> */}
+
+            <div
+              className="font-bold text-3xl text-center leading-loose"
+              dir="rtl"
+            >
+              <p>كري طوموبيل اليوم،</p>
+              <p> وغدا ديها فابور !!! </p>
+            </div>
           </div>
           <div
-            className="bg-white font-bold text-xl text-blue-800 rounded-3xl text-center px-4 py-2 w-full leading-relaxed"
+            className="bg-white font-bold text-2xl text-blue-800 rounded-3xl text-center py-2 w-full leading-relaxed"
             dir="rtl"
           >
             <p>كيفاش هاد البلان؟</p>
@@ -35,7 +42,7 @@ export default function Home() {
         </div>
 
         {/* DEATILS */}
-        <div className="border-4 border-white shadow-xl rounded-2xl px-4 my-4">
+        <div className="border-4 border-white shadow-xl rounded-2xl px-4 my-4 mx-10">
           <Image
             src="/Fidelity_points_roadmap.png"
             alt="Fidelity Points roadmap"
