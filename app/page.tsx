@@ -2,7 +2,7 @@ import CTA from "@/components/CTA";
 import Navbar from "@/components/Navbar";
 import OfferTable from "@/components/OfferTable";
 import { Button } from "@/components/ui/button";
-import { PartyPopper } from "lucide-react";
+import { CarFront, Coins, Gift, PartyPopper, Target } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -42,13 +42,43 @@ export default function Home() {
         </div>
 
         {/* DEATILS */}
-        <div className="border-4 border-white shadow-xl rounded-2xl px-4 my-4 mx-10">
-          <Image
+        <div className="border-4 border-white shadow-xl rounded-2xl my-4 mx-5 px-2 py-4">
+          {/* <Image
             src="/Fidelity_points_roadmap.png"
             alt="Fidelity Points roadmap"
             height={400}
             width={400}
-          />
+          /> */}
+          <div className="flex flex-col gap-5 items-end justify-between">
+            <div
+              className="flex gap-4 items-start justify-start text-white font-bold font-noto text-base"
+              dir="rtl"
+            >
+              <CarFront className="h-6 w-6" />
+              <p dir="rtl">مع Carigo، كل مرة كتكرّي فيها طوموبيل كتربح نقاط.</p>
+            </div>
+            <div
+              className="flex gap-4 items-center justify-start text-white font-bold font-noto text-base"
+              dir="rtl"
+            >
+              <Coins className="h-6 w-6" />
+              <p dir="rtl">جمع النقاط.</p>
+            </div>
+            <div
+              className="flex gap-4 items-center justify-start text-white font-bold font-noto text-base"
+              dir="rtl"
+            >
+              <Target className="h-6 w-6" />
+              <p dir="rtl">وصّل عدد كافي واستعمل نقاطك باش تكري فابور.</p>
+            </div>
+            <div
+              className="flex gap-4 items-center justify-start text-white font-bold font-noto text-base"
+              dir="rtl"
+            >
+              <Gift className="h-6 w-6" />
+              <p dir="rtl"> خدم النقاط ديالك وقت ما بغيت.</p>
+            </div>
+          </div>
         </div>
 
         {/* CTA */}
